@@ -1,16 +1,8 @@
-function SideDish(name, price) {
-  this.name = name;
-  this.price = price;
-}
 
 function DeluxeBurger(name, toppings, price) {
   this.name = name;
   this.toppings = toppings;
   this.price = price;
-}
-
-function Beverage(name, size, price) {
-
 }
 
 var bleuRibbon = new DeluxeBurger("Bleu Ribbon", ["Bleu cheese", "onions", "lettuce", "tomatoes", "aioli"], 10);
@@ -34,7 +26,7 @@ $(document).ready(function(){
       });
       var extraToppings = buildYourOwnBurgerToppings.length;
 
-      var totalPrice = extraToppings * .5;
+      var totalPrice = (extraToppings * .5)+5;
 
       alert(totalPrice);
     // var toppings = $("input:checkbox[name=toppings]:checked").val();
